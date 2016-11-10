@@ -1,9 +1,12 @@
 @nav-link-colour: #F0F0F0;
-@nav-link-hover-colour: #005f5f;
-@nav-link-active-colour: #fff;
+@nav-link-hover-colour: darken(@nav-link-colour, 5%);
+@nav-link-active-colour: lighten(@nav-link-colour, 5%);
 .nav {
+    position: absolute;
+    width: 100%;
+
     ul {
-        width: 600px;
+        width: 100%;
         margin: 0 auto;
         list-style: none;
         text-align: center;
@@ -13,6 +16,7 @@
     }
 
     li {
+        width: 100%/3;
         display: inline-block;
         line-height: 40px;
         height: 40px;

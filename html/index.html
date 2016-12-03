@@ -1,28 +1,53 @@
-<html>
+<html lang="en">
     <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
         <title>Lawrence Andrews</title>
-        <link rel="stylesheet" href="css/style.css" type="text/css"/>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" crossorigin="anonymous"/>
+
+        <link rel="stylesheet" href="css/style.css" type="text/css"/>
+        <script src="js/scrolling.js"></script>
     </head>
-    <body>
-        <div class="nav">
-            <ul>
-                <li><a href="/">Home</a></li>
-                <li><a href="aboutme.html">About Me</a></li>
-                <li><a href="http://blog.lawrenceandrews.co.uk">blog</a></li>
-            </ul>
-        </div>
-        <div class="container blurb-container">
-            <div class="blurb-content">
-                <div class="about-me-short">
-                    Include a short about-me section here, linking to <a href="aboutme.html">about me</a>
+    <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+        <nav class="navbar navbar-inverse navbar-fixed-top"> 
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar" aria-expanded="true" aria-controls="navbar">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+
+                    <a class="navbar-brand" href="#">
+                        LA
+                    </a>
+                </div>
+                <!-- Group everything to be hidden on small screens -->
+                <div id="navbar" class="collapse navbar-collapse">
+                    <ul class="nav navbar-nav navbar-right">
+                        <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
+                        <li class="hidden"><a class="page-scroll" href="#page-top"></a></li>
+                        <li><a class="page-scroll" href="#about">About</a></li>
+                        <li><a class="page-scroll" href="#contact">Contact</a></li>
+                    </ul>
                 </div>
             </div>
-        </div>
-        <div class="footer">
-            <div class="img">
-                <a href="https://github.com/lenny151"><img src="images/github.png"/></a>
+        </nav>
+
+            <div id="about" class="section about-section">
+                About me stuff to go here
             </div>
-        </div>
+
+            <div id="contact" class="section contact-section">
+                <p>Find me on <a href="github.com/laxd">Github</a>, on my <a href="blog.lawrenceandrews.co.uk">Blog</a> or at <b>lawrence@&lt;this domain&gt;</b>
+            </div>
+
     </body>
 </html>

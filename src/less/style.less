@@ -1,5 +1,65 @@
 @text-colour: #070707;
-@import "nav.less";
-@import "body.less";
-@import "footer.less";
+@nav-link-colour: #F0F0F0;
+@nav-link-hover-colour: darken(@nav-link-colour, 5%);
+@nav-link-active-colour: lighten(@nav-link-colour, 5%);
+@header-padding: 10%;
 
+.nav {
+    a {
+        text-decoration: none;
+
+        &:hover {
+            background-color: @nav-link-hover-colour;
+        }
+
+        &:active {
+            background-color: @nav-link-active-colour;
+            color: #444;
+            cursor: default;
+        }
+    }
+}
+
+body {
+    width: 100%;
+    height: 100%;
+}
+
+html {
+    width: 100%;
+    height: 100%;
+}
+
+@media(min-width:767px) {
+    .navbar {
+        padding: 20px 0;
+        transition: background .5s ease-in-out,padding .5s ease-in-out;
+    }
+
+    .top-nav-collapse {
+        padding: 0;
+    }
+}
+
+.section {
+   .about-section, .contact-section {
+      height: 100%;
+      padding-top: 150px;
+      text-align: center;
+      background: #fff;
+   } 
+}
+
+.about-section {
+    height: 100%;
+    padding-top: 150px;
+    text-align: center;
+    background: #eee;
+}
+
+.contact-section {
+    height: 100%;
+    padding-top: 150px;
+    text-align: center;
+    background: #eee;
+}

@@ -1,4 +1,9 @@
-@text-colour: #070707;
+@primary-text-colour: #222;
+@secondary-text-colour: darken(@primary-text-colour, 10%);
+
+@primary-background-colour: #fff;
+@secondary-background-colour: darken(@primary-background-colour, 10%);
+
 @nav-link-colour: #F0F0F0;
 @nav-link-hover-colour: darken(@nav-link-colour, 5%);
 @nav-link-active-colour: lighten(@nav-link-colour, 5%);
@@ -20,12 +25,7 @@
     }
 }
 
-body {
-    width: 100%;
-    height: 100%;
-}
-
-html {
+body, html {
     width: 100%;
     height: 100%;
 }
@@ -45,14 +45,26 @@ html {
     height: 100%;
     padding-top: 150px;
     text-align: center;
-}
+    color: @primary-text-colour;
 
-.about-section, .contact-section {
-    background: #eee;
-}
+    &:nth-child(even) {
+        background: @primary-background-colour;
+    }
 
-.projects-section {
-    // Remove this to enable
-    display: none;
-    background: #fff;
+    &:nth-child(odd) {
+        background: @secondary-background-colour;
+    }
+
+    a {
+        text-decoration: none;
+        font-weight: bold;
+        color: @primary-text-colour;
+        box-shadow: inset 0 -1px 0 0 lighten(@primary-text-colour, 50%);
+    }
+
+    ol, ul {
+        text-align: left;
+        margin: auto;
+        max-width: 750px;
+    }
 }

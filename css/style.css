@@ -1,0 +1,92 @@
+body,
+html {
+  width: 100%;
+  height: 100%;
+}
+
+.content {
+  margin-left: 250px;
+}
+
+/* Header bar */
+.header-bar {
+  position: fixed;
+  background-color: #222222;
+  height: 100%;
+  width: 250px;
+}
+
+.header-bar > h1 > a {
+  color: rgb(218, 218, 218);
+  padding: 50px 25px 50px 25px;
+  text-align: center;
+  font-size: 35px;
+  display: block;
+  font-family: sans-serif;
+}
+
+nav a {
+  text-align: center;
+}
+
+nav ol,nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+nav li {
+  border-top: solid 1px rgba(0, 0, 0, 0.3);
+  border-bottom: solid 1px rgba(255, 255, 255, 0.08);
+}
+
+.header-bar ul, .header-bar ol {
+    border-bottom: : solid 1px rgba(0, 0, 0, 0.3);
+    border-top: solid 1px rgba(255, 255, 255, 0.08);
+}
+
+nav a {
+  display: inline-block;
+  padding: 20px;
+  color: rgb(218, 218, 218);
+  text-decoration: none;
+  width: 100%;
+  text-align: center;
+  position: relative;
+}
+
+.header-bar a:hover {
+  color: #f6f6f6;
+  text-decoration: none;
+}
+
+/* Provide separation between sections */
+.section {
+  padding: 100px 100px;
+  text-align: center;
+  color: #222;
+}
+
+.section:nth-child(even) {
+  background: #fff;
+}
+
+.section:nth-child(odd) {
+  background: #e6e6e6;
+}
+
+.section:first {
+  padding-top: 200px;
+}
+
+.section h1,h2,h3,h4,h5,h6 {
+  padding-top: 25px;
+}
+
+/* Allows lists to be shown without bullets */
+.section ol,
+.section ul {
+  list-style-type: none;
+  text-align: left;
+  margin: auto;
+  max-width: 750px;
+}

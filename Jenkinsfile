@@ -3,7 +3,7 @@ pipeline {
   stages {
     stage('Build') {
       steps {
-        tool(name: 'lessc', type: 'lessc')
+        tool 'NodeJS'
         sh 'lessc src/less/style.less html/css/style.css'
       }
     }

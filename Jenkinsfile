@@ -3,9 +3,9 @@ pipeline {
   stages {
     stage('Build') {
       steps {
-        NODE_HOME="${tool 'NodeJS'}"
-        PATH="${env.NODE_HOME}/bin:${env.PATH}"
-        sh './build.sh'
+        nodejs('NodeJS') {
+          sh './build.sh'
+        }
       }
     }
     stage('Deploy') {

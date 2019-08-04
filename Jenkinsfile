@@ -3,8 +3,8 @@ pipeline {
   stages {
     stage('Build') {
       steps {
-        env.NODE_HOME="${tool 'NodeJS'}"
-        env.PATH="${env.NODE_HOME}/bin:${env.PATH}"
+        NODE_HOME="${tool 'NodeJS'}"
+        PATH="${env.NODE_HOME}/bin:${env.PATH}"
         sh './build.sh'
       }
     }

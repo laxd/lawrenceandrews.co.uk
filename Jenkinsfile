@@ -8,7 +8,7 @@ pipeline {
         }
       }
       steps {
-        sh 'rm -rf node_modules && npm install'
+        sh 'rm -rf node_modules && npm install --global'
         sh './build.sh'
       }
     }

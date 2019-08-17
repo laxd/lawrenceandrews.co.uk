@@ -1,5 +1,5 @@
-# Create target dir
-mkdir out
+# Create target dir, if required
+mkdir -p out
 
-lessc src/less/style.less out/css/style.css
 cp src/html/* out/
+lessc src/less/style.less out/css/style.css

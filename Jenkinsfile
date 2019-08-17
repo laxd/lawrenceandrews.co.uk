@@ -8,7 +8,7 @@ pipeline {
         }
       }
       steps {
-        sh 'npm install less'
+        sh 'npm install'
         sh './build.sh'
       }
     }

@@ -16,6 +16,8 @@ pipeline {
         sh 'rm -rf node_modules && npm install'
         sh '$LESS_CMD src/less/style.less out/css/style.css'
         sh 'cp src/html/* out/'
+
+        archiveArtifacts 'out/*'
       }
     }
   }

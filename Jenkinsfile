@@ -17,7 +17,7 @@ pipeline {
         sh '$LESS_CMD src/less/style.less out/css/style.css'
         sh 'cp src/html/* out/'
 
-        archiveArtifacts 'out/*'
+        archiveArtifacts 'out/**'
       }
     }
   }

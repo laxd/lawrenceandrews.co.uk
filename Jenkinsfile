@@ -2,7 +2,7 @@ pipeline {
   agent none
  
   environment {
-    LESS_CMD='./node_modules/.bin/lessc'
+    GULP_CMD='./node_modules/.bin/gulp'
   }
 
   stages {
@@ -14,7 +14,7 @@ pipeline {
       }
       steps {
         sh 'npm install'
-        sh 'gulp js css'
+        sh '$GULP_CMD js css'
 
         archiveArtifacts 'css/*, js/*, images/*, index.html'
       }

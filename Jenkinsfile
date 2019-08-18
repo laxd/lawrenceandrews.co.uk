@@ -13,11 +13,10 @@ pipeline {
         }
       }
       steps {
-        sh 'rm -rf node_modules && npm install'
-        sh '$LESS_CMD src/less/style.less out/css/style.css'
-        sh 'cp src/html/* out/'
+        sh 'npm install'
+        sh 'gulp js css'
 
-        archiveArtifacts 'out/*'
+        archiveArtifacts 'css/*, js/*, images/*, index.html'
       }
     }
   }

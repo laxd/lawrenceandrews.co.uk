@@ -1,17 +1,19 @@
 {
   "name": "lawrenceandrews.co.uk",
-  "version": "1.0.0",
+  "version": "0.0.2",
   "description": "",
-  "main": "index.js",
+  "main": "js/scripts.js",
   "scripts": {
-    "start": "browser-sync start --server --files '**/*.css, **/*.html, **/*.js, !node_modules/**/*' --directory --port 6037"
+    "build": "gulp build",
+    "watch": "gulp watch"
   },
-  "author": "",
-  "license": "ISC",
   "devDependencies": {
-    "browser-sync": "^2.18.13"
-  },
-  "dependencies": {
-    "less": "^3.10.0"
+    "gulp": "^4.0.0",
+    "gulp-autoprefixer": "^6.0.0",
+    "gulp-plumber": "^1.2.0",
+    "gulp-rename": "^1.4.0",
+    "gulp-sass": "^4.0.2",
+    "gulp-uglify": "^3.0.1",
+    "gulp-wait": "0.0.2"
   }
 }

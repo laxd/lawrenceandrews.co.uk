@@ -34,7 +34,7 @@
 */
 
 // Define base and accent colors
-$base-color: #3498db;
+$base-color: rgba(48, 50, 51, 0.8);
 $base-color-hover: darken($base-color, 10%);
 
 // Define background colors
@@ -648,18 +648,25 @@ footer {
     overflow: hidden;
     background: #fff;
     border-radius: 4px;
+
+    display: flex;
+    justify-content: flex-start;
 }
 
 .project-image {
-    float: left;
+    flex-basis: auto;
+
+    img {
+        width: 300px
+    }
 }
 
 .project-info {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    margin-left: 300px;
-    padding: 15px;
+    align-content: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
 
     h3 {
         font-size: 1.5em;

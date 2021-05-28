@@ -915,9 +915,15 @@ footer {
 
     #about {
         text-align: center;
+        display: flex;
+        flex-direction: column;
 
         p {
             text-align: left;
+        }
+
+        h2 {
+            flex-basis: 50px;
         }
     }
 
@@ -968,6 +974,15 @@ footer {
 
     #lead-down {
         display: none;
+    }
+
+    #about {
+        display: flex;
+        flex-direction: column;
+
+        h2 {
+            flex-basis: 50px;
+        }
     }
 
     .education-block {

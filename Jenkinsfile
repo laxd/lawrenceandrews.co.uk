@@ -13,10 +13,9 @@ pipeline {
         }
       }
       steps {
-        sh 'npm install'
-        sh '$GULP_CMD js css'
+        sh 'npm install && npm run build'
 
-        archiveArtifacts 'css/**, js/**, libs/**, images/**, *.html'
+        archiveArtifacts 'bin/*'
       }
     }
   }

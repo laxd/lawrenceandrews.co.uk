@@ -1,4 +1,4 @@
-out
+bin
 css/
 node_modules
 package-lock.json

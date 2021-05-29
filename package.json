@@ -1,19 +1,14 @@
 {
   "name": "lawrenceandrews.co.uk",
-  "version": "0.0.2",
+  "version": "1.0.0",
   "description": "",
-  "main": "js/scripts.js",
   "scripts": {
-    "build": "gulp build",
-    "watch": "gulp watch"
+    "build-css": "sass scss/:bin/css/",
+    "build": "npm run clean && mkdir -p bin && cp -r index.html js images libs bin && npm run build-css",
+    "clean": "rm -r bin/",
+    "watch": "sass scss/:css/ --watch"
   },
   "devDependencies": {
-    "gulp": "^4.0.0",
-    "gulp-autoprefixer": "^6.0.0",
-    "gulp-plumber": "^1.2.0",
-    "gulp-rename": "^1.4.0",
-    "gulp-sass": "^4.0.2",
-    "gulp-uglify": "^3.0.1",
-    "gulp-wait": "0.0.2"
+    "sass": "^1.34.0"
   }
 }

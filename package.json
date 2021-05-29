@@ -4,7 +4,7 @@
   "description": "",
   "scripts": {
     "build-css": "sass scss/:bin/css/",
-    "build": "npm run clean && mkdir -p bin && cp -r index.html js images libs bin && npm run build-css",
+    "build": "npm run clean && mkdir -p bin && cp -r index.html js images bin && npm run build-css",
     "clean": "rm -rf bin/",
     "watch": "sass scss/:bin/css/ --watch"
   },

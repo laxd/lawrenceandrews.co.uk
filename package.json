@@ -5,7 +5,7 @@
   "scripts": {
     "build-css": "sass scss/:bin/css/",
     "build": "npm run clean && mkdir -p bin && cp -r index.html js images libs bin && npm run build-css",
-    "clean": "rm -r bin/",
+    "clean": "rm -rf bin/",
     "watch": "sass scss/:css/ --watch"
   },
   "devDependencies": {

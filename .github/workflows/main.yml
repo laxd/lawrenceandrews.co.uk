@@ -28,4 +28,5 @@ jobs:
           server: ${{ secrets.ftp_hostname }}
           username: ${{ secrets.ftp_username }}
           password: ${{ secrets.ftp_password }}
-          local-dir: ./bin/
+          local-dir: bin/
+          remote-dir: public_html/

@@ -37,6 +37,10 @@ $text: #74808a;
     }
 }
 
+* {
+    box-sizing: border-box;
+}
+
 body {
     font-family: 'Lato', sans-serif;
     font-size: 16px;
@@ -689,6 +693,8 @@ footer {
 
     input, textarea {
         display: block;
+        font-size: 16px;
+        font-family: monospace;
         width: 100%;
         padding: 10px;
         border-radius: 4px;

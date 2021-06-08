@@ -1,4 +1,4 @@
-(function($) {
+$(document).ready(function($) {
     // Scroll to top
     $('#to-top').click(function() {
         $('html, body').animate({
@@ -13,4 +13,15 @@
             scrollTop: scrollDistance + 'px'
         }, 500);
     });
-})(jQuery);
+
+    // Set all the items in skills to fade in in a staircase fashion
+    let delay = 50
+    $('#skills li').each(function () {
+        $(this)
+            .attr("data-aos-delay", delay)
+            .attr("data-aos", "fade-up")
+        delay += 50
+    })
+
+    AOS.init();
+})
